@@ -1,0 +1,47 @@
+What happens when you initialize a repository ? why do you need to do it ?
+    git init turns a folder into a git repository which means that you can 
+    start tracking files and changes to those files.
+How can you use the staging area to make sure you have one commit per logical change?
+     First add files that are related to the first logical change you want to commit, and after making it sure you have staged all the files, make a commit. Next you stage other files that are related to the second logical change you want to commit, and so on.
+     
+What are some situations when branches would be helpful in keeping your history organized ? how would branches help ?
+      if you want to add new features  then branch would be helpful.
+      master branch would contain original commits and other branch 
+      would contain added features.
+      As described in the lesson, branches are useful for when you have working
+      code and want to try a variation in functionality without breaking what you
+      currently have. By branching you create a copy of the master (or wherever 
+       the head is) and then "branch off" at that point. The main branch stays 
+       intact and unchanged, but you are free to make any changes to the new 
+       branch.
+How do the diagrams help you visualize the branch structure ?       
+       every commit point ot its previous commit , or parent commit.
+       it helps git log to show all commits on a branch.
+       They also let me easily see what commit each branch
+       refers to.
+What is the result of merging of two branch together ? why do we represent it in the diagram the way we do ?          
+        After merging the two branches , final result contains commits from
+         both branch. and final commit contain information about both 
+         branch.
+         the result of merging of two branches together is combined commit 
+         with all changes from both branches. we represen merge in the digram 
+         having two parents - the two commits that it combined.
+          For non-merge
+         commits, the parent of the commit is the state of the files before that
+         commit was made.  For merge commits, there was no one state of the files
+         before the commit was made, since the merge commit combines two commits
+         together, so it makes sense for the merge commit to have two parents.
+What are pros and cons of Git's automatic merging vs always doing manual merging ? 
+         Git's automatic merging can save the user a lot of time!  Especially when
+    multiple people are working together, merging everything manually could be
+    very painful.
+
+    The downside of automatic merging is that it's not perfect.  Merging the
+    coins branch with the master branch, which included color, resulted in
+    inconsistent visuals, where most items were colored but the coins were not.
+    Git could even make worse mistakes - for example, if one branch deleted a
+    function, and another branch added a call to that function, Git would merge
+    those together with no conflict and the resulting code would be broken.
+
+     Overall, Git's merging can save a lot of time, but it's important to always
+     double check that the code still works after doing a merge.

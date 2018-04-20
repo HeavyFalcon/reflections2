@@ -1,0 +1,9 @@
+When would you want to use a remote repository rather than keeping all your work local?
+     when i want to share my project with someone else,or if i want to work from other 
+     system.i can access my project on other system. also,remots can be a good way backing up
+     my work.
+What is the benefit of having a copy of the last known state of the remote sotred locally ?
+     you can see that state of the remote even if you're offline . it also
+     allows you to do comarisions with what is on the remote.
+ How would you collaborate without using Git or GitHub ? what would be easier , and what would be
+ harder ?    
